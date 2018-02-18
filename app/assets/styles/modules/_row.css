@@ -1,6 +1,4 @@
 .row {
-
-
 	@mixin clearFix;
 
 
@@ -19,6 +17,11 @@
 			width: 37%;
 		}
 
+		&__medium-6 {
+			float: left;
+			width: 50%;
+		}
+
 		&__medium-8 {
 			float: left;
 			width: 66.66%;
@@ -35,12 +38,29 @@
 	} /*this will push the margin out to the right so that we can get rid of the*/
 	/*padding on the gutter.  Now we go towrapper and set overflow: hidden*/
 
+	&--gutters-large {
+		margin-right: -100px;
+	} /*this will push the margin out to the right so that we can get rid of the*/
+	/*padding on the gutter.  Now we go towrapper and set overflow: hidden*/
+
 	&--gutters > div {
+	/*all the divs within the gutters will have this setting*/
 		padding-right: 65px;
 
 	}
+
+	&--gutters-large > div {
+		/*all the divs within the gutters will have this setting*/
+		padding-right: 100px;
+
+	}
+
 	&__b-margin-until-medium {
 		margin-bottom: 1rem;
 	}
+
+
+
+
 
 } 
