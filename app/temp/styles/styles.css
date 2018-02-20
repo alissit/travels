@@ -1047,6 +1047,29 @@ a {
 
 	}
 
+.site-footer {
+
+	background-color: #2f5572;
+	color: white;
+	padding: .5rem;
+	text-align: center;
+}
+
+.site-footer__text {
+		display: block;
+		margin-bottom: 1rem;
+		font-weight: 200;
+	}
+
+@media(min-width: 800px){
+
+.site-footer__text {
+			display: inline;
+			margin-bottom: 0;
+			margin-right: 1.4rem
+	}
+	}
+
 /*DO NOT EDIT modules/_sprite DIRECTLY AS IT IS GENERATED AUTOMATICALLY BY GULP*/
 
 /*INSTEAD EDIT gulp/templates/sprite*/
