@@ -7,12 +7,17 @@
 	}
 
 	&__text-content{
+		padding-top: 88px;
 		position: absolute;
 		top: 50%; /*this vertically centers the text, but we need to pull it up a bit still*/
 		transform: translateY(-50%);/*pulls up the text 50% of itself vertically*/
 		left: 0;
 		width: 100%;
 		text-align: center;
+
+		@mixin atMedium {
+			padding-top: 60px;
+		}
 	}
 
 	&__title {

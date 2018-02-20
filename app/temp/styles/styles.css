@@ -481,6 +481,7 @@ a {
 	}
 
 .large-hero__text-content{
+		padding-top: 88px;
 		position: absolute;
 		top: 50%; /*this vertically centers the text, but we need to pull it up a bit still*/
 		-webkit-transform: translateY(-50%);
@@ -488,6 +489,13 @@ a {
 		left: 0;
 		width: 100%;
 		text-align: center;
+	}
+
+@media(min-width: 800px){
+
+.large-hero__text-content{
+			padding-top: 60px
+	}
 	}
 
 .large-hero__title {
@@ -1083,6 +1091,7 @@ a {
 		height: 59.53px;
 
 		background-position: 0 0;
+
 	}
 
 .icon--comment {
@@ -1090,6 +1099,7 @@ a {
 		height: 64px;
 
 		background-position: 99.70443349753694% 0;
+
 	}
 
 .icon--facebook {
@@ -1097,6 +1107,7 @@ a {
 		height: 42.01px;
 
 		background-position: 26.040607071652357% 45.795830448496034%;
+
 	}
 
 .icon--fire {
@@ -1104,6 +1115,7 @@ a {
 		height: 64px;
 
 		background-position: 0 99.56481481481481%;
+
 	}
 
 .icon--globe {
@@ -1111,6 +1123,7 @@ a {
 		height: 64px;
 
 		background-position: 27.586206896551722% 99.56481481481481%;
+
 	}
 
 .icon--instagram {
@@ -1118,6 +1131,7 @@ a {
 		height: 42.01px;
 
 		background-position: 63.2917018534157% 49.234556504346486%;
+
 	}
 
 .icon--mail {
@@ -1125,6 +1139,7 @@ a {
 		height: 48px;
 
 		background-position: 0 48.00806451612903%;
+
 	}
 
 .icon--rain {
@@ -1132,6 +1147,7 @@ a {
 		height: 64px;
 
 		background-position: 99.70443349753694% 59.25925925925926%;
+
 	}
 
 .icon--star {
@@ -1139,6 +1155,7 @@ a {
 		height: 64px;
 
 		background-position: 59.11330049261084% 99.56481481481481%;
+
 	}
 
 .icon--twitter {
@@ -1146,6 +1163,7 @@ a {
 		height: 42.06px;
 
 		background-position: 94.04330452560171% 98.50700323226104%;
+
 	}
 
 .icon--wifi {
@@ -1153,6 +1171,7 @@ a {
 		height: 64px;
 
 		background-position: 68.79227053140097% 0;
+
 	}
 
 .icon--youtube {
@@ -1160,6 +1179,112 @@ a {
 		height: 42px;
 
 		background-position: 36.69752421959096% 45.792307692307695%;
+
+	}
+
+.site-header {
+	padding: 10px 0;
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	z-index: 2;
+}
+
+/*will bring this forward over the large header*/
+
+@media(min-width: 800px){
+
+.site-header {
+		background-color: rgba(47,85,114, .3)
+}
+	}
+
+.site-header__btn-container {
+		float: right;
+	}
+
+.site-header__logo {
+		position: absolute;
+		top: 0;
+		left:50%;
+		-webkit-transform: translateX(-50%) scale(.8);
+		        transform: translateX(-50%) scale(.8);
+		-webkit-transform-origin: 50% 0;
+		        transform-origin: 50% 0;
+		background-color: #2f5572;
+		padding: 25px 36px;
+	}
+
+@media(min-width: 800px){
+
+.site-header__logo {
+			left: auto;
+			-webkit-transform: translateX(0);
+			        transform: translateX(0)
+	}
+	}
+
+.site-header__logo__graphic {
+		text-indent: -9999px;
+		/*hides the html in the header*/
+
+	}
+
+.site-header__menu-icon {
+		width: 20px;
+		height: 20px;
+		background-color: #fff;
+		position: absolute;
+		top: 10px;
+		right:10px;
+	}
+
+@media(min-width: 800px){
+
+.site-header__menu-icon {
+			display: none
+	}
+	}
+
+.site-header__menu-content {
+		display: none;
+	}
+
+@media(min-width: 800px){
+
+.site-header__menu-content {
+			display: block
+	}
+	}
+
+.primary-nav--pull-right {
+		float: right;
+	}
+
+.primary-nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+.primary-nav ul::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.primary-nav li {
+		list-style: none;
+		float:left;
+		padding-right: 20px;
+
+	}
+
+.primary-nav a {
+		color: white;
+		text-decoration: none;
+		font-weight: 300;
+		display: block;
+		padding: 12px 0;
 	}
 
 
